@@ -34,8 +34,7 @@ class StrollerPulseTabPFN:
         # 1. Try local Prior Labs TabPFN (open weights running on CPU)
         try:
             from tabpfn import TabPFNClassifier
-            print("[StrollerPulse] Loading Prior Labs TabPFN (local in-context Transformer)...")
-            self.model = TabPFNClassifier(device=self.device, N_ensemble_configurations=self.n_ensembles)
+            self.model = TabPFNClassifier(device=self.device)
             self.model.fit(self.X_ref, self.y_ref)
             self.model_type = "TabPFN (Local Foundation Model)"
             self.is_calibrated = True

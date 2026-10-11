@@ -105,7 +105,7 @@ def _eval_tabpfn(X_train, y_train, X_test, y_test, n_runs):
     # Try local TabPFN if torch is ready, else use the ensemble engine
     try:
         from tabpfn import TabPFNClassifier
-        clf = TabPFNClassifier(device='cpu', N_ensemble_configurations=2)
+        clf = TabPFNClassifier(device='cpu')
         clf.fit(X_train, y_train)
     except Exception:
         from sklearn.ensemble import ExtraTreesClassifier, HistGradientBoostingClassifier, VotingClassifier
