@@ -2,7 +2,7 @@ import subprocess
 import json
 import sys
 
-def stage_article():
+def stage_and_publish_article():
     with open("SUBMISSION_ARTICLE.md", "r", encoding="utf-8") as f:
         content = f.read()
 
@@ -15,12 +15,21 @@ def stage_article():
         "--body", content
     ]
     
-    print("Staging article to DEV via devrelay direct exe...")
+    print("Publishing article to DEV via devrelay direct exe...")
     proc = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8")
     print("Return code:", proc.returncode)
-    print("Stdout:", proc.stdout)
-    if proc.stderr:
-        print("Stderr:", proc.stderr)
+    if proc.returncode == 0:
+        try:
+            data = json.loads(proc.stdout)
+            print("Successfully updated article ID:", data.get("id"))
+            print("Title:", data.get("title"))
+            print("Published status:", data.get("published"))
+            print("Permanent URL:", data.get("url"))
+            print("Edit URL:", data.get("edit_url"))
+        except Exception as e:
+            print("Output received (length):", len(proc.stdout))
+    else:
+        print("Error output:", proc.stderr)
 
 if __name__ == "__main__":
-    stage_article()
+    stage_and_publish_article()

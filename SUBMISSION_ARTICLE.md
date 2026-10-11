@@ -1,6 +1,6 @@
 ---
 title: StrollerPulse: The Screen-Free Shock & Terrain Watchdog Powered by Prior Labs TabPFN
-published: false
+published: true
 tags: devchallenge, hf26challenge, ai, machinelearning
 ---
 
