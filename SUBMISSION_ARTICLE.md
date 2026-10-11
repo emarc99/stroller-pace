@@ -32,6 +32,7 @@ You leave your phone in your pocket or stroller handlebar pouch. Your eyes stay 
 
 ## Demo
 
+- **Live Deployed Web Application (Render):** [https://stroller-pace.onrender.com](https://stroller-pace.onrender.com/)
 - **GitHub Repository:** [github.com/emarc99/stroller-pace](https://github.com/emarc99/stroller-pace)
 - **Live Demo Video & HUD Preview:**
 

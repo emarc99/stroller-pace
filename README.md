@@ -4,8 +4,11 @@
 
 [![Hacktoberfest 2026](https://img.shields.io/badge/Hacktoberfest-2026%20Week%201-10b981.svg)](https://dev.to/challenges/hacktoberfest-week1-2026-10-05)
 [![Prior Labs TabPFN](https://img.shields.io/badge/Powered%20by-Prior%20Labs%20TabPFN-3b82f6.svg)](https://github.com/prior-labs/tabpfn)
+[![Live on Render](https://img.shields.io/badge/Live%20Demo-Render-46e3b7.svg)](https://stroller-pace.onrender.com)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115-059669.svg)](https://fastapi.tiangolo.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-amber.svg)](LICENSE)
+
+🌐 **Live Deployed App on Render:** [https://stroller-pace.onrender.com](https://stroller-pace.onrender.com)
 
 ---
 
